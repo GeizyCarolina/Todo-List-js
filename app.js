@@ -69,7 +69,8 @@ const atualizarTela = () => {
     
     limparTarefas()
     //percorrer o banco para exibir as tarefas
-    banco.forEach((x, indice ) => criarItem(x.tarefa, x.status, indice))
+    banco.forEach((x, indice ) => 
+      criarItem(x.tarefa, x.status, indice))
 
 }
 
@@ -87,6 +88,7 @@ tecla_enter.addEventListener('keypress', function(event){
     }
 
 })
+
 
 // excluir tarefa
 
